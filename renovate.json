@@ -1,4 +1,6 @@
 {
+  "addLabels": "dependency-update",
+  "dependencyDashboardAutoclose": true,
   "extends": [
     "config:base"
   ],
