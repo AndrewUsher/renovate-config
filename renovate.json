@@ -1,10 +1,17 @@
 {
-  "addLabels": "dependency-update",
+  "addLabels": ["dependency-update"],
   "dependencyDashboardAutoclose": true,
   "extends": [
     "config:base"
   ],
   "rangeStrategy": "bump",
   "masterIssue": true,
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["engines"],
+      "enabled": false
+    }
+  ],
   "assignees": ["AndrewUsher"]
 }
